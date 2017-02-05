@@ -1,0 +1,31 @@
+{
+    "description" : "Addon for fast navigating within prefered webpages",
+    "author" : "Serhii Horbenko",
+    "manifest_version" : 2,
+    "name" : "IconsMark",
+    "version" : "1.0",
+    "icons" : {
+        "48" : "icons/logo.svg" 
+    },
+
+    "browser_action" : {
+        "default_icon" : "icons/logo.svg",
+        "default_title" : "IconMark",
+        "default_popup" : "popup/geo.html"
+    },
+
+    "page_action": {
+        "browser_style": true,
+        "default_title": "IconMark"
+    },
+
+    "permissions" : [
+        "activeTab",
+        "storage",
+        "tabs"
+    ],
+
+    "background" : {
+        "scripts" : ["background.js"]
+    }
+}
